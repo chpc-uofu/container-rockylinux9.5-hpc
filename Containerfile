@@ -4,9 +4,6 @@ FROM docker.io/rockylinux/rockylinux:9.5
 # Image build arguments:
 ARG imageversion="localdev"
 
-# Environmental variables:
-ENV XXXX YYYY
-
 # Labels
 LABEL org.opencontainers.image.authors="UofU CHPC <helpdesk@chpc.utah.edu>"
 LABEL org.opencontainers.image.description="A custom container image for testing apps in HPC for the CHPC General Environment."

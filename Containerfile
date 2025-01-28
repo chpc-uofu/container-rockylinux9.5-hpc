@@ -17,8 +17,15 @@ LABEL org.opencontainers.image.vendor="chpc.utah.edu"
 LABEL org.opencontainers.image.version=${imageversion}
   
 
+# Copy external files:
+COPY ./files/dnf-packages.txt /tmp/dnf-packages.txt
+
 # Package installs/updates:
 RUN dnf -y update; \
-    dnf install -y \
-      epel-release \
-      which
+    dnf install -y epel-release; \
+    dnf clean -y all; \
+    dnf -y update; \
+    dnf install -y $(cat /tmp/dnf-packages.txt)
+
+# Cleanup:
+RUN rm /tmp/dnf-packages.txt

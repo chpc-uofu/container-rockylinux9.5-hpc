@@ -1,6 +1,6 @@
 # Rocky Linux 9.5 HPC Test Image
 
-[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![Release](https://github.com/CHPC-UofU/container-rockylinux9.5-hpc/actions/workflows/release.yml/badge.svg)](https://github.com/CHPC-UofU/container-rockylinux9.5-hpc/actions/workflows/release.yml)
 
 A custom container image for testing apps in HPC for the CHPC General Environment.
